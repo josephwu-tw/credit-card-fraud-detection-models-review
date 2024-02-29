@@ -74,4 +74,4 @@ history_lstm = model_lstm.fit(x_train_lstm, y_train,
 
 # show_train_history(history_lstm, 'loss', 'val_loss', title = 'Train History - LSTM')
 
-model_lstm.save('./models/LSTM.h5')
+model_lstm.save('./models/LSTM.keras')

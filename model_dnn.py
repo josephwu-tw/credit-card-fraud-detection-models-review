@@ -40,7 +40,7 @@ keras.backend.clear_session()
 
 model_dnn = keras.Sequential(
     [
-        keras.Input(shape=(15)),
+        keras.Input(shape=(15,)),
         layers.Dense(16, activation="relu"),
         layers.Dropout(0.2),
         layers.Dense(8, activation="relu"),
@@ -62,4 +62,4 @@ history_dnn = model_dnn.fit(x_train, y_train,
 
 # show_train_history(history_dnn, 'loss', 'val_loss', title = 'Train History - DNN')
 
-model_dnn.save('./models/DNN.h5')
+model_dnn.save('./models/DNN.keras')
