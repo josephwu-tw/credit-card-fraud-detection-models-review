@@ -12,9 +12,9 @@ x_test_lstm = x_test.reshape((x_test.shape[0], 1, x_test.shape[1]))
 
 ### Load model
 
-model_dnn = load_model('./models/DNN.h5')
-model_cnn = load_model('./models/CNN.h5')
-model_lstm = load_model('./models/LSTM.h5')
+model_dnn = load_model('./models/DNN.keras')
+model_cnn = load_model('./models/CNN.keras')
+model_lstm = load_model('./models/LSTM.keras')
 
 
 
@@ -148,6 +148,8 @@ print('Precision: %f' % lstm_precision)
 print('F1-Score: %f' % lstm_f1)
 print('Confusion Matrix')
 print(lstm_cm)
+
+print('')
     
 
 
