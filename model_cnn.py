@@ -65,4 +65,4 @@ history_cnn = model_cnn.fit(x_train, y_train,
 
 # show_train_history(history_cnn, 'loss', 'val_loss', title = 'Train History - CNN')
 
-model_cnn.save('./models/CNN.h5')
+model_cnn.save('./models/CNN.keras')
