@@ -1,4 +1,4 @@
-### libs
+### Setup
 
 import os
 import numpy as np
@@ -114,7 +114,7 @@ transactions_df = transactions_df.sort_values('TX_DATETIME').reset_index(drop=Tr
 
 ### Output dataset
 
-DIR_OUTPUT = '/dataset/'
+DIR_OUTPUT = './dataset/'
 
 if not os.path.exists(DIR_OUTPUT):
     os.makedirs(DIR_OUTPUT)
